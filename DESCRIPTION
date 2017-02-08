@@ -11,7 +11,7 @@ License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Imports:
-    groHMM (>= 1.6.0),
+    groHMM (>= 1.7.0.9000),
     RMySQL (>= 0.10.9),
     rtracklayer (>= 1.32.1),
 URL: https://github.uconn.edu/CoreLab/runon
@@ -27,3 +27,4 @@ Collate:
     'gene_boundaries.R'
     'io.R'
     'runon.R'
+Remotes: omsai/groHMM@unittests
