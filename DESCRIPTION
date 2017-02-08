@@ -1,0 +1,29 @@
+Package: runon
+Title: Utilities for "Nuclear Run On" Biological Experiments
+Version: 0.0.0.9000
+Authors@R: person("Pariksheet", "Nanda", email = "pariksheet.nanda@uconn.edu",
+	   	  role = c("aut", "cre"))
+Description: Processes and analyzes raw nuclear run on data.  The first
+    processing step is to estimate gene boundaries using an HMM.
+Depends:
+    R (>= 3.3.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports:
+    groHMM (>= 1.6.0),
+    RMySQL (>= 0.10.9),
+    rtracklayer (>= 1.32.1),
+URL: https://github.uconn.edu/CoreLab/runon
+BugReports: https://github.uconn.edu/CoreLab/runon/issues
+biocViews: WholeGenome, Sequencing, Transcription, FunctionalGenomics, Software
+RoxygenNote: 5.0.1
+Suggests:
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
+Collate:
+    'gene_boundaries.R'
+    'io.R'
+    'runon.R'
